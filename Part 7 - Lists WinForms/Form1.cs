@@ -51,5 +51,50 @@ namespace Part_7___Lists_WinForms
             lstHeroes.DataSource = heroes;
             lblStatus.Text = "Status: Heroes Sorted";
         }
+
+        private void btnNewNumbers_Click(object sender, EventArgs e)
+        {
+            numbers.Clear();
+            for (int i = 0; i < 20; i++)
+                numbers.Add(generator.Next(100));
+            lstNumbers.DataSource = null;
+            lstNumbers.DataSource = numbers;
+            lblStatus.Text = $"Status: New Numbers List";
+
+        }
+
+        private void btnNewHeros_Click(object sender, EventArgs e)
+        {
+            heroes.Clear();
+
+            heroes.Add("SUPERMAN");
+            heroes.Add("BATMAN");
+            lstHeroes.DataSource = null;
+            lstHeroes.DataSource = heroes;
+            lblStatus.Text = $"Status: New Heroes List";
+
+        }
+
+        private void btnRemoveNumber_Click(object sender, EventArgs e)
+        {
+            if (lstNumbers.SelectedIndex > -1)
+            {
+                numbers.RemoveAt(lstNumbers.SelectedIndex);
+            }
+            
+        
+            lstNumbers.DataSource = null;
+            lstNumbers.DataSource = numbers;
+            lblStatus.Text = $"Status: Selected Number Removed";
+
+        }
+
+        private void btnRemoveAllNumbers_Click(object sender, EventArgs e)
+        {
+            while (numbers.Remove((int)lstNumbers.SelectedItem)) ;
+            lstNumbers.DataSource = null;
+            lstNumbers.DataSource = numbers;
+            lblStatus.Text = $"Status: All Numbers Removed";
+        }
     }
 }
