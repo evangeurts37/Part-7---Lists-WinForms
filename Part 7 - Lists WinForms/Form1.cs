@@ -78,8 +78,8 @@ namespace Part_7___Lists_WinForms
         {
             if (lstNumbers.SelectedIndex != -1)
             {
-                //numbers.Remove((Int32)lstNumbers.SelectedItem);   Remove by value
-                numbers.RemoveAt(lstNumbers.SelectedIndex);       //Remove by index
+               
+                numbers.RemoveAt(lstNumbers.SelectedIndex);       
                 lstNumbers.DataSource = null;
                 lstNumbers.DataSource = numbers;
                 lblStatus.Text = "Status: item removed";
@@ -91,7 +91,7 @@ namespace Part_7___Lists_WinForms
 
         private void btnRemoveAllNumbers_Click(object sender, EventArgs e)
         {
-            if (lstNumbers.SelectedIndex != -1)//Verifies that an item is selected
+            if (lstNumbers.SelectedIndex != -1)
             {
                 int numRemoved = 0;
                 while (numbers.Remove((Int32)lstNumbers.SelectedItem))
@@ -107,18 +107,18 @@ namespace Part_7___Lists_WinForms
 
         private void btnRemoveHero_Click(object sender, EventArgs e)
         {
-            string removeHeroe = txtRemoveHero.Text.Trim();
+            string removeHero = txtRemoveHero.Text.Trim();
 
             lstHeroes.DataSource = null;
             lstHeroes.DataSource = heroes;
-            if (heroes.Remove(removeHeroe))
+            if (heroes.Remove(removeHero))
             {
                 lstHeroes.DataSource = null;
                 lstHeroes.DataSource = heroes;
                 lblStatus.Text = "Status: item removed";
             }
             else
-                lblStatus.Text = "Status: heroe not found";
+                lblStatus.Text = "Status: hero not found";
         }
 
         private void btnAddHero_Click(object sender, EventArgs e)

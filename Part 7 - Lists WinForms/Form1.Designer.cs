@@ -50,7 +50,7 @@
             // 
             // btnNewNumbers
             // 
-            this.btnNewNumbers.Location = new System.Drawing.Point(177, 78);
+            this.btnNewNumbers.Location = new System.Drawing.Point(12, 25);
             this.btnNewNumbers.Name = "btnNewNumbers";
             this.btnNewNumbers.Size = new System.Drawing.Size(75, 23);
             this.btnNewNumbers.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             // btnSortNumbers
             // 
-            this.btnSortNumbers.Location = new System.Drawing.Point(259, 78);
+            this.btnSortNumbers.Location = new System.Drawing.Point(93, 25);
             this.btnSortNumbers.Name = "btnSortNumbers";
             this.btnSortNumbers.Size = new System.Drawing.Size(75, 23);
             this.btnSortNumbers.TabIndex = 1;
@@ -70,7 +70,7 @@
             // 
             // btnNewHeros
             // 
-            this.btnNewHeros.Location = new System.Drawing.Point(433, 77);
+            this.btnNewHeros.Location = new System.Drawing.Point(240, 25);
             this.btnNewHeros.Name = "btnNewHeros";
             this.btnNewHeros.Size = new System.Drawing.Size(75, 23);
             this.btnNewHeros.TabIndex = 2;
@@ -80,7 +80,7 @@
             // 
             // btnSortHeroes
             // 
-            this.btnSortHeroes.Location = new System.Drawing.Point(532, 77);
+            this.btnSortHeroes.Location = new System.Drawing.Point(321, 25);
             this.btnSortHeroes.Name = "btnSortHeroes";
             this.btnSortHeroes.Size = new System.Drawing.Size(75, 23);
             this.btnSortHeroes.TabIndex = 3;
@@ -90,7 +90,7 @@
             // 
             // btnAddHero
             // 
-            this.btnAddHero.Location = new System.Drawing.Point(588, 267);
+            this.btnAddHero.Location = new System.Drawing.Point(321, 171);
             this.btnAddHero.Name = "btnAddHero";
             this.btnAddHero.Size = new System.Drawing.Size(75, 23);
             this.btnAddHero.TabIndex = 4;
@@ -100,7 +100,7 @@
             // 
             // btnRemoveHero
             // 
-            this.btnRemoveHero.Location = new System.Drawing.Point(588, 319);
+            this.btnRemoveHero.Location = new System.Drawing.Point(321, 213);
             this.btnRemoveHero.Name = "btnRemoveHero";
             this.btnRemoveHero.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveHero.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             // btnRemoveNumber
             // 
-            this.btnRemoveNumber.Location = new System.Drawing.Point(163, 268);
+            this.btnRemoveNumber.Location = new System.Drawing.Point(12, 168);
             this.btnRemoveNumber.Name = "btnRemoveNumber";
             this.btnRemoveNumber.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveNumber.TabIndex = 6;
@@ -120,7 +120,7 @@
             // 
             // btnRemoveAllNumbers
             // 
-            this.btnRemoveAllNumbers.Location = new System.Drawing.Point(259, 267);
+            this.btnRemoveAllNumbers.Location = new System.Drawing.Point(93, 168);
             this.btnRemoveAllNumbers.Name = "btnRemoveAllNumbers";
             this.btnRemoveAllNumbers.Size = new System.Drawing.Size(75, 23);
             this.btnRemoveAllNumbers.TabIndex = 7;
@@ -131,7 +131,7 @@
             // lstNumbers
             // 
             this.lstNumbers.FormattingEnabled = true;
-            this.lstNumbers.Location = new System.Drawing.Point(201, 126);
+            this.lstNumbers.Location = new System.Drawing.Point(29, 54);
             this.lstNumbers.Name = "lstNumbers";
             this.lstNumbers.Size = new System.Drawing.Size(120, 95);
             this.lstNumbers.TabIndex = 8;
@@ -139,7 +139,7 @@
             // lstHeroes
             // 
             this.lstHeroes.FormattingEnabled = true;
-            this.lstHeroes.Location = new System.Drawing.Point(461, 126);
+            this.lstHeroes.Location = new System.Drawing.Point(260, 54);
             this.lstHeroes.Name = "lstHeroes";
             this.lstHeroes.Size = new System.Drawing.Size(120, 95);
             this.lstHeroes.TabIndex = 9;
@@ -147,25 +147,27 @@
             // lblNumbers
             // 
             this.lblNumbers.AutoSize = true;
-            this.lblNumbers.Location = new System.Drawing.Point(163, 38);
+            this.lblNumbers.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumbers.Location = new System.Drawing.Point(59, 1);
             this.lblNumbers.Name = "lblNumbers";
-            this.lblNumbers.Size = new System.Drawing.Size(49, 13);
+            this.lblNumbers.Size = new System.Drawing.Size(59, 21);
             this.lblNumbers.TabIndex = 10;
             this.lblNumbers.Text = "Numbers";
             // 
             // lblHeroes
             // 
             this.lblHeroes.AutoSize = true;
-            this.lblHeroes.Location = new System.Drawing.Point(474, 22);
+            this.lblHeroes.Font = new System.Drawing.Font("Myanmar Text", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHeroes.Location = new System.Drawing.Point(295, 1);
             this.lblHeroes.Name = "lblHeroes";
-            this.lblHeroes.Size = new System.Drawing.Size(41, 13);
+            this.lblHeroes.Size = new System.Drawing.Size(47, 21);
             this.lblHeroes.TabIndex = 11;
             this.lblHeroes.Text = "Heroes";
             // 
             // lblTextNum
             // 
             this.lblTextNum.AutoSize = true;
-            this.lblTextNum.Location = new System.Drawing.Point(189, 241);
+            this.lblTextNum.Location = new System.Drawing.Point(26, 152);
             this.lblTextNum.Name = "lblTextNum";
             this.lblTextNum.Size = new System.Drawing.Size(134, 13);
             this.lblTextNum.TabIndex = 12;
@@ -174,7 +176,7 @@
             // lblHeroAdd
             // 
             this.lblHeroAdd.AutoSize = true;
-            this.lblHeroAdd.Location = new System.Drawing.Point(472, 250);
+            this.lblHeroAdd.Location = new System.Drawing.Point(257, 152);
             this.lblHeroAdd.Name = "lblHeroAdd";
             this.lblHeroAdd.Size = new System.Drawing.Size(132, 13);
             this.lblHeroAdd.TabIndex = 13;
@@ -183,7 +185,7 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(48, 402);
+            this.lblStatus.Location = new System.Drawing.Point(12, 197);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(40, 13);
             this.lblStatus.TabIndex = 14;
@@ -192,7 +194,7 @@
             // lblRemoveHero
             // 
             this.lblRemoveHero.AutoSize = true;
-            this.lblRemoveHero.Location = new System.Drawing.Point(433, 310);
+            this.lblRemoveHero.Location = new System.Drawing.Point(247, 197);
             this.lblRemoveHero.Name = "lblRemoveHero";
             this.lblRemoveHero.Size = new System.Drawing.Size(149, 13);
             this.lblRemoveHero.TabIndex = 15;
@@ -200,16 +202,16 @@
             // 
             // txtAddHero
             // 
-            this.txtAddHero.Location = new System.Drawing.Point(461, 270);
+            this.txtAddHero.Location = new System.Drawing.Point(240, 171);
             this.txtAddHero.Name = "txtAddHero";
-            this.txtAddHero.Size = new System.Drawing.Size(100, 20);
+            this.txtAddHero.Size = new System.Drawing.Size(75, 20);
             this.txtAddHero.TabIndex = 16;
             // 
             // txtRemoveHero
             // 
-            this.txtRemoveHero.Location = new System.Drawing.Point(475, 326);
+            this.txtRemoveHero.Location = new System.Drawing.Point(240, 213);
             this.txtRemoveHero.Name = "txtRemoveHero";
-            this.txtRemoveHero.Size = new System.Drawing.Size(100, 20);
+            this.txtRemoveHero.Size = new System.Drawing.Size(75, 20);
             this.txtRemoveHero.TabIndex = 17;
             // 
             // frmThing
@@ -217,7 +219,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(675, 457);
+            this.ClientSize = new System.Drawing.Size(424, 240);
             this.Controls.Add(this.txtRemoveHero);
             this.Controls.Add(this.txtAddHero);
             this.Controls.Add(this.lblRemoveHero);
