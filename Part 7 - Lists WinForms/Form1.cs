@@ -28,7 +28,6 @@ namespace Part_7___Lists_WinForms
             for (int i = 0; i < 20; i++)
                 numbers.Add(generator.Next(100));
             lstNumbers.DataSource = numbers;
-
             heroes.Add("BATMAN");
             heroes.Add("SUPERMAN");
             lstNumbers.DataSource = numbers;
@@ -77,24 +76,68 @@ namespace Part_7___Lists_WinForms
 
         private void btnRemoveNumber_Click(object sender, EventArgs e)
         {
-            if (lstNumbers.SelectedIndex > -1)
+            if (lstNumbers.SelectedIndex != -1)
             {
-                numbers.RemoveAt(lstNumbers.SelectedIndex);
+                //numbers.Remove((Int32)lstNumbers.SelectedItem);   Remove by value
+                numbers.RemoveAt(lstNumbers.SelectedIndex);       //Remove by index
+                lstNumbers.DataSource = null;
+                lstNumbers.DataSource = numbers;
+                lblStatus.Text = "Status: item removed";
             }
-            
-        
-            lstNumbers.DataSource = null;
-            lstNumbers.DataSource = numbers;
-            lblStatus.Text = $"Status: Selected Number Removed";
+            else
+                lblStatus.Text = "Status: no item selected";
 
         }
 
         private void btnRemoveAllNumbers_Click(object sender, EventArgs e)
         {
-            while (numbers.Remove((int)lstNumbers.SelectedItem)) ;
-            lstNumbers.DataSource = null;
-            lstNumbers.DataSource = numbers;
-            lblStatus.Text = $"Status: All Numbers Removed";
+            if (lstNumbers.SelectedIndex != -1)//Verifies that an item is selected
+            {
+                int numRemoved = 0;
+                while (numbers.Remove((Int32)lstNumbers.SelectedItem))
+                    numRemoved++;
+                lstNumbers.DataSource = null;
+                lstNumbers.DataSource = numbers;
+                lblStatus.Text = $"Status: {numRemoved} item(s) removed";
+            }
+            else
+                lblStatus.Text = "Status: nothing to remove";
+
         }
+
+        private void btnRemoveHero_Click(object sender, EventArgs e)
+        {
+            string removeHeroe = txtRemoveHero.Text.Trim();
+
+            lstHeroes.DataSource = null;
+            lstHeroes.DataSource = heroes;
+            if (heroes.Remove(removeHeroe))
+            {
+                lstHeroes.DataSource = null;
+                lstHeroes.DataSource = heroes;
+                lblStatus.Text = "Status: item removed";
+            }
+            else
+                lblStatus.Text = "Status: heroe not found";
+        }
+
+        private void btnAddHero_Click(object sender, EventArgs e)
+        {
+            string addHero = txtAddHero.Text.Trim();
+            if (addHero.Length > 0)
+            {
+                heroes.Add(addHero);
+                txtAddHero.Text = "";
+                lstHeroes.DataSource = null;
+                lstHeroes.DataSource = heroes;
+                lblStatus.Text = "Status: item removed";
+            }
+            else
+                lblStatus.Text = "Status: no hero to add";
+
+        }
+       
+
+        
     }
 }

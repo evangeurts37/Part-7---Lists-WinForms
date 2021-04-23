@@ -96,6 +96,7 @@
             this.btnAddHero.TabIndex = 4;
             this.btnAddHero.Text = "Add";
             this.btnAddHero.UseVisualStyleBackColor = true;
+            this.btnAddHero.Click += new System.EventHandler(this.btnAddHero_Click);
             // 
             // btnRemoveHero
             // 
@@ -105,6 +106,7 @@
             this.btnRemoveHero.TabIndex = 5;
             this.btnRemoveHero.Text = "Remove";
             this.btnRemoveHero.UseVisualStyleBackColor = true;
+            this.btnRemoveHero.Click += new System.EventHandler(this.btnRemoveHero_Click);
             // 
             // btnRemoveNumber
             // 
